@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+sidebar_label: '4. FAQ'
+---
 # ❓ Các Câu Hỏi Thường Gặp (FAQ)
 
 Dưới đây là tổng hợp các thắc mắc phổ biến nhất của Cộng tác viên (CTV) trong quá trình sử dụng hệ thống Affiliate.

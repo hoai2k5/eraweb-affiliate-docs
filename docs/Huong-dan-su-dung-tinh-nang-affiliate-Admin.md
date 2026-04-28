@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+sidebar_label: '2. Dành cho Admin'
+---
 # ⚙️ Hướng Dẫn Vận Hành & Quản Trị Affiliate (Dành Cho Admin)
 
 Tài liệu này hướng dẫn Quản trị viên (Admin) cách thiết lập, vận hành chiến dịch và quản lý mạng lưới Cộng tác viên (Affiliate) trên hệ thống Eraweb theo một quy trình chuẩn xác nhất.
@@ -16,6 +20,9 @@ Truy cập menu **Marketing -> Affiliate -> Config**.
 
 *Lưu ý: Thay đổi cấu hình chỉ áp dụng cho các giao dịch phát sinh TỪ THỜI ĐIỂM LƯU trở về sau, không làm thay đổi dữ liệu cũ.*
 
+![Cấu hình Affiliate](/img/config.png)
+*Giao diện thiết lập Hoa hồng mặc định và Hạn mức rút tiền.*
+
 ### 2. Cài Đặt Thông Báo Tự Động (ZNS)
 Để hệ thống tự động chăm sóc CTV một cách chuyên nghiệp, hãy thiết lập ZNS tại mục **Settings -> Notifications**.
 1. Chọn Tab **ZNS**.
@@ -24,6 +31,8 @@ Truy cập menu **Marketing -> Affiliate -> Config**.
    * **Account Approved:** Thông báo chúc mừng khi tài khoản được duyệt.
    * **Account Locked:** Thông báo khi tài khoản bị khóa/hủy hợp tác.
 3. Chọn Template đã được duyệt từ Zalo Cloud và bấm **Save General**.
+![Cấu hình Zalo ZNS](/img/configZns.png)
+*Giao diện chọn các mẫu tin nhắn chăm sóc tự động qua Zalo.*
 
 ---
 
@@ -39,6 +48,8 @@ Tại bảng điều khiển, bạn có thể xem các thông tin: Tên đối t
 1. Bấm vào tên Đối tác để mở bảng Edit.
 2. Tại mục **Custom %**, nhập mức hoa hồng riêng (Ví dụ: 10%). 
 3. Bấm **Lưu**. Mức % này sẽ ghi đè lên mức Hoa hồng mặc định của hệ thống khi CTV này bán được hàng.
+![Danh sách Cộng tác viên](/img/allaffiliate.png)
+*Quản lý trạng thái và thiết lập mức hoa hồng riêng (Custom %) cho từng Đối tác.*
 
 ### 4. Quản Lý Chiến Dịch (Campaigns)
 Truy cập menu **Marketing -> Affiliate -> Campaign**. Chức năng này giúp bạn tạo các chương trình đẩy số cho từng sản phẩm cụ thể.
@@ -46,6 +57,9 @@ Truy cập menu **Marketing -> Affiliate -> Campaign**. Chức năng này giúp 
 2. Chọn Sản phẩm (Products) đưa vào chiến dịch.
 3. Thiết lập mức Hoa hồng riêng cho chiến dịch này (thường cao hơn mức mặc định để kích cầu).
 4. Hệ thống sẽ tự động cập nhật mức hoa hồng mới này lên giao diện Dashboard của CTV.
+![Danh sách Chiến dịch](/img/campaign.png)
+![Chi tiết Chiến dịch](/img/campaignDetail.png)
+*Thiết lập các chiến dịch đẩy số với mức hoa hồng hấp dẫn cho từng sản phẩm cụ thể.*
 
 ---
 
@@ -63,12 +77,16 @@ Hệ thống xử lý đơn hàng hoàn toàn tự động dựa trên các nguy
 
 **🛡️ Tính Năng Chống Gian Lận Tự Động:**
 Hệ thống tự động kiểm tra chéo thông tin Khách mua hàng (SĐT, Email) với thông tin của CTV. Nếu trùng khớp (hành vi tự mua hàng lấy hoa hồng), lệnh hoa hồng vẫn được tạo để lưu vết nhưng sẽ bị gắn cờ `[INVALID]` (Không hợp lệ) và **Hoa hồng = 0**.
+![Quản lý Hoa hồng](/img/commission.png)
+![Chi tiết Hoa hồng](/img/commissionDetail.png)
+*Theo dõi và đối soát từng lệnh hoa hồng sinh ra từ các đơn hàng thực tế.*
 
 ### 6. Xem Báo Cáo Thống Kê (Affiliate Report)
 Truy cập menu **Reports -> Affiliate** để có cái nhìn toàn cảnh về hiệu suất mạng lưới:
 * **Các chỉ số tổng quan (KPIs):** Doanh thu thực tế (Total Revenue), Hoa hồng phải trả (Total Commission), Số CTV đang hoạt động (Active Partners), và Tổng tiền đang chờ thanh toán (Pending Payouts).
 * **Biểu đồ Tương quan:** Trực quan hóa Doanh thu và Chi phí hoa hồng theo thời gian thực.
 * **Bảng xếp hạng (Leaderboards):** Theo dõi Top 5 CTV hoạt động hiệu quả nhất và Top 5 Sản phẩm bán chạy nhất để có chiến lược kinh doanh phù hợp.
+![Báo cáo Admin](/img/reportAdmin.png)
 
 ---
 
@@ -87,3 +105,5 @@ Truy cập menu **Reports -> Affiliate** để có cái nhìn toàn cảnh về 
 2. Kế toán click vào Mã Payout (VD: `#1024`) để kiểm tra thông tin ngân hàng (hệ thống đã lưu Snapshot thông tin thẻ ngay tại thời điểm CTV bấm rút).
 3. **Nếu chuyển khoản thành công:** Chuyển trạng thái sang **1 - Paid (Đã thanh toán)**.
 4. **Nếu thông tin sai lệch (Sai tên/STK):** Chuyển trạng thái sang **2 - Rejected (Từ chối)** và ghi rõ lý do. Ngay lập tức, hệ thống sẽ **Tự động Hoàn tiền (Auto-Refund)** trả lại số tiền đó vào Số dư khả dụng của CTV để họ cập nhật thông tin và rút lại.
+![Chi tiết Rút tiền](/img/payoutDetail.png)
+*Giao diện kế toán đối soát lệnh rút tiền. Tính năng Xóa bị khóa cứng để bảo mật tài chính.*

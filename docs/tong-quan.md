@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+sidebar_label: '1. Tổng Quan'
+---
 # 🌟 Tổng Quan Hệ Thống Affiliate Eraweb
 
 Hệ thống Affiliate (Tiếp thị liên kết) trên Eraweb là giải pháp toàn diện giúp doanh nghiệp xây dựng, quản lý và mở rộng mạng lưới Cộng tác viên (CTV) bán hàng một cách hoàn toàn tự động.
@@ -6,6 +10,11 @@ Hệ thống Affiliate (Tiếp thị liên kết) trên Eraweb là giải pháp 
 
 ## 1. Mục tiêu của hệ thống
 Thay vì phải theo dõi thủ công qua file Excel hay tin nhắn, module Affiliate tự động hóa toàn bộ quy trình: từ việc cấp link riêng cho CTV, ghi nhận cookie, tính toán hoa hồng dựa trên tháp ưu tiên, cho đến đối soát và tự động hóa các thông báo qua Zalo/Email.
+![Tổng quan Dashboard Admin](/img/dashboardAdmin.png)
+*Giao diện tổng quan hiệu suất Affiliate dành cho Ban Quản trị.*
+
+![Tổng quan Dashboard CTV](/img/dashboardCTV.png)
+*Giao diện báo cáo và tạo link trực quan dành cho Đối tác (Cộng tác viên).*
 
 ## 2. Điểm nổi bật (Key Features)
 * **Tracking chính xác (Cookie 14 ngày):** Ghi nhận doanh thu cho CTV ngay cả khi khách hàng quay lại mua sau vài ngày.

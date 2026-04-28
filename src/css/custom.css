@@ -6,15 +6,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #ff6c22;
+  --ifm-color-primary-dark: #e65c15;
+  --ifm-color-primary-darker: #cc5212;
+  --ifm-color-primary-darkest: #a3410e;
+  --ifm-color-primary-light: #ff8546;
+  --ifm-color-primary-lighter: #ff9d6b;
+  --ifm-color-primary-lightest: #ffb68f;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,4 +25,56 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Tối ưu lại Font chữ tiêu đề cho thanh thoát, hiện đại */
+h1 {
+  font-size: 2rem !important;
+  font-weight: 800 !important;
+  color: #1e293b;
+}
+
+h2 {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #334155;
+  margin-top: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  color: #475569;
+}
+
+/* TỰ ĐỘNG BO GÓC VÀ ĐỔ BÓNG CHO TOÀN BỘ ẢNH TRONG DOCS */
+.markdown img {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  margin: 25px 0;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng hover nhẹ khi trỏ chuột vào ảnh */
+.markdown img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.markdown p:has(img) {
+  text-align: center;
+}
+
+/* CHỈ canh giữa và làm mờ chữ in nghiêng nếu nó nằm ngay dưới ảnh (Caption) */
+.markdown p:has(img)+p em {
+  display: block;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: -15px;
+  margin-bottom: 25px;
 }
